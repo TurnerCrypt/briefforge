@@ -16,6 +16,7 @@ Browser HTML, CSS and JavaScript modules; Node 24 for a local static server and 
 Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide ; https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage ; https://nodejs.org/api/test.html
 
 ## Where It Runs and How Someone Tries It
+Public source repository: https://github.com/TurnerCrypt/briefforge . Published with learner authorization on 16 October 2026. Local running instructions below still apply; a public repository is not a hosted app URL. Demo video remains outstanding.
 Run `node server.cjs`, then open http://127.0.0.1:4173 . The server binds loopback and serves only application assets. A local app plus recorded demo is sufficient for this stage; no hosted deployment is currently selected. Submission still requires a public repository and short video.
 
 ## The Core Journey Through the System

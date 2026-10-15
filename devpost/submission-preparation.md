@@ -6,7 +6,7 @@ This is a technical readiness checklist, not a draft of the learner's public sub
 - Working local app, original design, core tests and browser-flow checks exist.
 - Product-plan review explicitly approved after the learner clarified the meaning of review.
 - Rule-based browser architecture accepted; complete technical-plan/build-record review remains to be confirmed. App map prepared as a reference.
-- Registration completed, as confirmed by the learner on 16 October 2026. Public repository publication authorized next. Demo upload and final Devpost submission have not been performed.
+- Registration completed, as confirmed by the learner on 16 October 2026. Public repository published with explicit authorization: https://github.com/TurnerCrypt/briefforge . Unauthenticated GitHub API verification confirms public access, app/planning files present, and personal learner notes excluded. Demo upload and final Devpost submission have not been performed.
 
 ## Required materials
 - Public source repository with run instructions and planning documents.
