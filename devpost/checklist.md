@@ -1,6 +1,6 @@
 ---
 doc: checklist
-status: approved
+status: draft
 ---
 # Build Checklist
 
@@ -30,6 +30,9 @@ Build mode: fast implementation requested through repeated continuation; brief c
 - [ ] App map generated, checked and shown.
 
 ## Revisions
+
+- Planning approval audit corrected: full PRD/spec/build-order reviews were not completed before implementation. Documents returned to draft; implemented prototype retained for review. Do not claim workflow completion until learner reviews are recorded.
+- Glass visibility revised after learner feedback: shell tint reduced from 74% to 25%, blur reduced from 15px to 2.5px, and original background outlines made brighter. Input and requirement surfaces retain strong reading contrast.
 
 - Node test runner uses `--test-isolation=none` because the restricted Windows environment denies child-process spawning. All seven tests pass in the single-process runner.
 

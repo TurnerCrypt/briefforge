@@ -15,3 +15,5 @@ Revision 3: learner requested a more randomized arrangement. The preview now use
 Core journey already approved: paste brief → review source-linked requirements and uncertainty flags → check off → export.
 
 Still to resolve in product planning: first-screen layout, editing behavior, persistence and export format. No functional app or extraction engine exists yet.
+
+Current state correction: a working local prototype now exists. Learner reported that its glass was too opaque and the pattern invisible beneath the shell. Revised shell tint to 25%, blur to 2.5px and brightened the outlines; keep the reading surfaces dark. This revision awaits learner feedback. Complete product/technical review also remains pending, as recorded in the restored draft documents.

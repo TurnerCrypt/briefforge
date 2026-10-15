@@ -1,6 +1,6 @@
 ---
 doc: spec
-status: approved
+status: draft
 ---
 # BriefForge — Technical Plan
 
@@ -9,7 +9,7 @@ The page searches the pasted brief for explicit instruction sentences. Each matc
 
 ## Decisions and Open Issues
 Learner approved the proposed free browser app with rule-based extraction by answering “lets go.” Existing product direction and visual decisions are carried forward. HTML/CSS/JavaScript without dependencies is an implementation choice derived from the accepted lightweight approach. Markdown export remains the proposed default; it is inexpensive to revise. No learner-specific technical uncertainty was supplied; the main implementation risk to check is recognizing useful requirements without treating every descriptive sentence as an instruction.
-This authorization is used to proceed with one integrated build and hands-on review, rather than ask the same go-ahead again. Final learner review remains pending.
+Review correction: the free rule-based architecture was explicitly accepted, but the full technical document was not reviewed. Restored to draft pending the product-plan review and then technical-plan review. Keep the existing prototype available for evaluation.
 
 ## Stack
 Browser HTML, CSS and JavaScript modules; Node 24 for a local static server and built-in tests. No third-party runtime packages.
