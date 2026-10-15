@@ -39,6 +39,7 @@ Acceptance check: generate a checklist, complete an item, close/reopen the page 
 Source: learner answered “yeah lets do that” to device-local automatic saving.
 
 ## Review and Corrections
+Display a concise action label above the evidence, rather than repeating the full rule as the title. Retain exact source wording and available section/list context in the source disclosure. Keep numbers, limits, negative and conditional wording visible through the label or review flags; uncertain simplifications use review-oriented labels. Learner explicitly requested this refinement with “run it.”
 Users can edit the checklist wording while the source sentence remains unchanged. Marking an item complete does not certify eligibility or resolve an uncertainty flag. Continue was interpreted as agreement to the preceding recommendation to support editing; include this behavior in final product review.
 
 ## Export

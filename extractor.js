@@ -7,6 +7,34 @@ const excludedSection = /^(?:\d+[.)]\s*)?(?:judging(?: and evaluation)?|judging 
 const clean = s=>s.replace(/^\s*[-*•]\s+/,'').replace(/^[\s#*•✅📏📦🌊🧭📚🎥🚀👉🌙✨🌑💬]+/u,'').replace(/^\d+[.)]\s+/,'').trim();
 const normalized = s=>s.toLowerCase().replace(/[*_]/g,'').replace(/[.!:]$/,'').replace(/\s+/g,' ').trim();
 
+// Conservative labels: complex exceptions stay in the evidence and receive a
+// review-oriented label rather than a fabricated simplification of the rule.
+export function actionTitle(text, category) {
+ const plain=text.replace(/\*\*/g,'').replace(/\s+/g,' ').replace(/[.!]$/,'').trim();
+ if(category==='Deadline')return /^Wave\s+\d+/i.test(plain)?'Review '+plain:'Confirm cutoff: '+plain;
+ if(/\b(?:if|when|unless|except|provided that|subject to)\b/i.test(plain))return `Review conditional ${category.toLowerCase()} requirement`;
+ if(/\b(?:not eligible|ineligible|excluded|sanction)\b/i.test(plain))return 'Check eligibility exclusions in the source';
+ if(/\b(?:do not|don't|may not|must not|prohibited|not allowed|not be)\b/i.test(plain))return 'Check prohibited actions in the source';
+ const optional=/\b(?:may|should|optional|recommended|encouraged)\b/i.test(plain)?'Review optional/advisory item: ':'';
+ if(/\bREADME\b/i.test(plain)&&! /\b(?:license|copyright)\b/i.test(plain))return optional+'Prepare a README with the required details';
+ if(/\b(?:license|licensing)\b/i.test(plain))return optional+'Review the code licensing requirements';
+ if(/\b(?:slide deck|pitch presentation)\b/i.test(plain)&&! /\b(?:repository|video)\b/i.test(plain))return optional+'Add a slide deck';
+ if(/\b(?:demo|video)\b/i.test(plain)&&! /\b(?:repository|slide deck)\b/i.test(plain)){
+  const limit=plain.match(/\b(?:under|less than|at most|no more than|up to)\s+\d+(?:\s*\(\d+\))?\s*(?:minutes?|seconds?)/i);
+  return optional+'Prepare a demo / video pitch'+(limit?' '+limit[0]:'');
+ }
+ if(/\bCompact contract\b/i.test(plain)&&/compil/i.test(plain))return optional+'Include at least one compiling Compact contract';
+ if(/\b(?:repository|GitHub)\b/i.test(plain)&&! /\b(?:video|slide deck)\b/i.test(plain)){
+  if(/midnightntwrk/i.test(plain))return optional+'Add the midnightntwrk GitHub label';
+  if(/public/i.test(plain))return optional+'Provide a public code repository';
+ }
+ if(/\b(?:must be|at least)\s+18\b|18 years of age or older/i.test(plain))return 'Check the minimum age: 18';
+ if(/description of.*progress/i.test(plain))return optional+'Describe progress completed during this Wave';
+ if(/every team member.*register individually|each member.*register individually/i.test(plain))return optional+'Register each team member individually';
+ if(plain.length>125)return `Review ${category.toLowerCase()} requirements in the source`;
+ return plain.replace(/^(?:your project|the project|each project|each submission|you|entrants?|participants?)\s+(?:must|shall|need to|have to)\s+/i,'').replace(/^./,s=>s.toUpperCase());
+}
+
 function classify(text) {
  if(/\b(?:deadline|due)\b|submission period|submissions? (?:close|end)|register by|submit (?:by|before)/i.test(text))return 'Deadline';
  if(/\brepositor|\bgithub|\bgitlab|\blicen[cs]e|\bsource code|\bREADME\b/i.test(text))return 'Code';
@@ -28,7 +56,7 @@ export function extractRequirements(brief) {
  if(typeof brief!=='string')throw new TypeError('Brief must be text.');
  const lines=contentLines(brief);const items=[];const seen=new Set();
  const rulesStart=lines.findIndex(s=>/^(?:official\s+)?rules\s*:?$/i.test(clean(s)));
- let section='';let inherited='';let tableHeader='';
+ let section='';let sectionSource='';let inherited='';let tableHeader='';
  function add(title,source,category,flags=[]) {
   const key=normalized(title).replace(/^(?:each submission|the project|your project|each project) must /,'').replace(/^include /,'');
   if(seen.has(key)||source.length>2500)return;seen.add(key);
@@ -39,7 +67,9 @@ export function extractRequirements(brief) {
   if(/\b(?:may|optional|encouraged|recommended|should|preferably)\b/i.test(source)&&! /\bmay not\b/i.test(source))flags.push('Advisory, optional or conditional wording. Verify whether this is mandatory.');
   if(/\b(?:if |when |except|unless|subject to|TBD|to be (?:announced|determined)|standard exceptions|provided that)\b/i.test(source))flags.push('An exception or condition needs review.');
   if(title.length>360)flags.push('Long instruction: review the full source for separate requirements.');
-  items.push({id:`req-${items.length+1}`,title,source,category,flags:[...new Set(flags)],done:false});
+  const evidence=sectionSource&&!source.includes(sectionSource)?sectionSource+'\n'+source:source;
+  if(evidence.length>2500)return;
+  items.push({id:`req-${items.length+1}`,title:actionTitle(title,category),source:evidence,category,flags:[...new Set(flags)],done:false});
  }
  for(let index=0;index<lines.length;index++){
   const raw=lines[index];if(!raw)continue;const text=clean(raw);if(!text)continue;
@@ -49,7 +79,7 @@ export function extractRequirements(brief) {
   if(rulesStart>=0&&index<rulesStart)continue;
   const numberedHeading=/^\d+[.)]\s+\S/.test(raw)&&text.length<120&&!obligation.test(text)&&!directive.test(text)&&!dates.test(text);
   if(numberedHeading||excludedSection.test(text)||/^(?:technical gate|how to join|rules|submission requirements|eligibility|registration and entry|format and schedule)\s*:?$/i.test(text)){
-   section=text;inherited='';tableHeader='';continue;
+   section=text;sectionSource=raw;inherited='';tableHeader='';continue;
   }
   if(excludedSection.test(section)&&!obligation.test(text))continue;
   if(rulesStart>=0&&/^how to join$/i.test(section))continue;

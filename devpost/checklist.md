@@ -33,6 +33,8 @@ Reference map prepared at `devpost/app-map.html`. Plain-language code route pres
 
 ## Revisions
 
+- User reported original source duplicated the card title. Added concise conservative action labels and original section/list context, preserving separate editable wording and evidence. Twelve tests pass, including source immutability, limits and conditional/optional handling. Browser recheck was attempted twice but connection timed out; visual verification remains pending. Existing saved checklists require explicit regeneration.
+
 - Real full-page input revealed 110 noisy results including participant comments and missed noun-only deliverables. Extractor refined with rule-section preference, dated-comment filtering, required-list context, abbreviation preservation and schedule-row handling. Existing saved checklists are not overwritten; regenerate to use the new parser.
 
 - Planning approval audit corrected: full PRD/spec/build-order reviews were not completed before implementation. Documents returned to draft; implemented prototype retained for review. Do not claim workflow completion until learner reviews are recorded.

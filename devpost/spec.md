@@ -31,6 +31,7 @@ Split newlines/bullets/sentences while retaining exact source snippets. Match su
 
 Real-input refinement: prefer a recognizable Rules body when available; ignore a Comments section only when it introduces dated messages (not top navigation). Required-list introductions supply evidence for noun-only entries. Preserve abbreviations such as U.S. inside source sentences. Deduplicate repeated schedule rows, flag missing years/timezones and distinguish stage dates from confirmed conflicts. Full-page parsing remains heuristic; ignored introductory guidance may still need manual review.
 ### App and Rendering
+Extractor actionTitle creates conservative concise labels; source keeps original section/list context and sentence wording. Display and export continue to use separate editable title and immutable evidence. Existing saved work is not migrated or overwritten; refresh then regenerate explicitly to obtain updated labels.
 Safe DOM text APIs render user content. Source remains immutable while editable wording and completion change. Brief changes mark results outdated; exporting outdated results is blocked until regenerating. Regeneration warns before replacing progress. Empty and no-match states are explicit. Sample brief is labeled and loaded only on request.
 ### Storage
 One versioned localStorage record for draft brief, analyzed brief and items; validate restored shape and limit input to 60,000 characters. Storage failure keeps current session usable and shows a warning. Clear action asks before deleting local work.
