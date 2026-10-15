@@ -1,6 +1,6 @@
 ---
 doc: prd
-status: draft
+status: approved
 ---
 
 # BriefForge — Product Requirements
@@ -70,4 +70,4 @@ The approved paste/review/check-off/export journey plus device saving. Accounts,
 - This complete draft has not yet been displayed for approval. Review together: editable wording, Markdown export, empty/error states and working BriefForge name/logo.
 - Technical planning must resolve whether extraction runs locally using explicit text patterns or uses a hosted model. This is a consequential choice: local rules need no API key but cannot understand arbitrary language as broadly as a model. No extraction behavior should be presented as AI if it uses rules.
 
-Review correction: implementation proceeded after continuation messages, but the complete product-plan review was not explicitly completed. This document is restored to draft. Existing explicit decisions remain recorded; the complete plan must now be shown and confirmed. The current implementation is a reviewable prototype, not evidence of product-plan approval.
+Review correction: implementation preceded the complete review. The learner subsequently reviewed the plain-language behavior summary and explicitly approved it: “yes i am cool with the app.” Product-plan review is now complete; this does not imply that an organizer reviewed the project or that submission has occurred.

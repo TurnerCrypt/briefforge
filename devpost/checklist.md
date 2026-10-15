@@ -29,6 +29,8 @@ Build mode: fast implementation requested through repeated continuation; brief c
 - [ ] Optional edit/transfer reflection addressed.
 - [ ] App map generated, checked and shown.
 
+Reference map prepared at `devpost/app-map.html`. Plain-language code route presented: generate click in app.js → extractRequirements in extractor.js → render in app.js, with local saveState in storage.js. This is explanation/reference material; no learner hands-on code navigation or edit claimed. Map display/inspection and optional learning activity remain pending.
+
 ## Revisions
 
 - Planning approval audit corrected: full PRD/spec/build-order reviews were not completed before implementation. Documents returned to draft; implemented prototype retained for review. Do not claim workflow completion until learner reviews are recorded.
