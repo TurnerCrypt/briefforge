@@ -7,7 +7,7 @@ status: approved
 Build mode: fast implementation requested through repeated continuation; brief code orientation and hands-on review remain pending. One integrated slice keeps this small app coherent.
 
 ## Slices
-- [ ] **1. Paste, verify, correct, save and export a real checklist**
+- [x] **1. Paste, verify, correct, save and export a real checklist**
   Becomes usable: Full local core journey with source-backed rules extraction and approved visual design.
   Why now: Extraction with evidence is the kernel; persistence and export are small parts of the same state flow.
   PRD ref: `prd.md > The Core Journey`, `prd.md > Requirements and Evidence`, `prd.md > Automatic Saving`, `prd.md > Review and Corrections`, `prd.md > Export`
@@ -35,6 +35,8 @@ Build mode: fast implementation requested through repeated continuation; brief c
 
 ## Mechanical Evidence
 Seven core fixtures pass. Browser sample generated eight requirements; edited demo wording and checked state survived reload. Downloaded Markdown was inspected and preserved both edited text and unchanged source. Narrow viewport had equal document/client widths (375px), with no horizontal overflow. App assets return HTTP 200; private learner-profile and .env routes return 404. User feedback and final readiness remain pending.
+
+Implementation checkpoint: `c9ee88c`. The slice is implemented and verified; unchecked hands-on/final-review boxes above remain outstanding.
 
 ## Authorization
 User approved rule-based browser approach with “lets go” after repeatedly requesting production. Build order follows the agreed core journey; no new product surface added. Git checkpoint is local only. Final feedback is not assumed.
