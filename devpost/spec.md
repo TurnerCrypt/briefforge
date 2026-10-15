@@ -28,6 +28,8 @@ Implement approved theme-preview.svg: charcoal background, stable randomized mak
 ## Components
 ### Extractor
 Split newlines/bullets/sentences while retaining exact source snippets. Match submission instructions, constraints, eligibility, tools and deadlines. Attach a category and review flags. Do not invent dates or infer eligibility. Mark deadlines without a timezone and contradictory-looking multiple deadlines for review. Negative requirements remain negative; optional phrasing remains optional. Keyword heuristics are deliberately limited; not a complete eligibility checker.
+
+Real-input refinement: prefer a recognizable Rules body when available; ignore a Comments section only when it introduces dated messages (not top navigation). Required-list introductions supply evidence for noun-only entries. Preserve abbreviations such as U.S. inside source sentences. Deduplicate repeated schedule rows, flag missing years/timezones and distinguish stage dates from confirmed conflicts. Full-page parsing remains heuristic; ignored introductory guidance may still need manual review.
 ### App and Rendering
 Safe DOM text APIs render user content. Source remains immutable while editable wording and completion change. Brief changes mark results outdated; exporting outdated results is blocked until regenerating. Regeneration warns before replacing progress. Empty and no-match states are explicit. Sample brief is labeled and loaded only on request.
 ### Storage

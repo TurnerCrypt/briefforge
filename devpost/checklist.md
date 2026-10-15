@@ -33,12 +33,15 @@ Reference map prepared at `devpost/app-map.html`. Plain-language code route pres
 
 ## Revisions
 
+- Real full-page input revealed 110 noisy results including participant comments and missed noun-only deliverables. Extractor refined with rule-section preference, dated-comment filtering, required-list context, abbreviation preservation and schedule-row handling. Existing saved checklists are not overwritten; regenerate to use the new parser.
+
 - Planning approval audit corrected: full PRD/spec/build-order reviews were not completed before implementation. Documents returned to draft; implemented prototype retained for review. Do not claim workflow completion until learner reviews are recorded.
 - Glass visibility revised after learner feedback: shell tint reduced from 74% to 25%, blur reduced from 15px to 2.5px, and original background outlines made brighter. Input and requirement surfaces retain strong reading contrast.
 
 - Node test runner uses `--test-isolation=none` because the restricted Windows environment denies child-process spawning. All seven tests pass in the single-process runner.
 
 ## Mechanical Evidence
+Real-input regression: 56,109-character supplied page reduced from 110 old exported items to 42 revised items. Isolated localhost browser run confirmed 42 displayed items, README and slide-deck capture, and absence of the sampled participant-comment leaks. Ten Node tests pass. Original 127.0.0.1 saved work was not regenerated or replaced; learner must refresh and choose to regenerate.
 Seven core fixtures pass. Browser sample generated eight requirements; edited demo wording and checked state survived reload. Downloaded Markdown was inspected and preserved both edited text and unchanged source. Narrow viewport had equal document/client widths (375px), with no horizontal overflow. App assets return HTTP 200; private learner-profile and .env routes return 404. User feedback and final readiness remain pending.
 
 Implementation checkpoint: `c9ee88c`. The slice is implemented and verified; unchecked hands-on/final-review boxes above remain outstanding.

@@ -9,7 +9,7 @@ Install Node.js (developed using Node 24), then run `node server.cjs` from this 
 Select **Try a sample**, then **Create checklist**. Inspect the source sentences, edit wording, mark a requirement complete and reload. Export downloads a Markdown snapshot with sources, flags and checkboxes. Paste your own brief to try another event; regeneration replaces previous edits after confirmation.
 
 ## Limits and privacy
-Extraction uses keyword patterns, not AI. It may miss requirements, include irrelevant instructions or classify items incorrectly. It does not verify eligibility, resolve contradictions or convert timezones. Always review full official rules. Missing timezone flags apply to the matched sentence; another part of the pasted brief may define it.
+Extraction uses keyword and section patterns, not AI. For recognizable full-page copies it prefers the Rules section, skips dated comment feeds, preserves required-list context and extracts labeled Wave schedule rows. Other layouts may still be missed or misclassified. It does not verify eligibility, resolve contradictions or convert timezones. Always review full official rules. Timezone/year flags apply to the matched source; another part of the pasted brief may define them. When a recognizable Rules section exists, introductory guidance outside it can be omitted; check that too.
 
 Data stays in this browser's localStorage. No brief content is sent to a remote service. Clearing browser storage removes saved work. Private browsing, storage limits and browser settings may prevent persistence; a warning is shown. Clearing local work asks for confirmation. Maximum brief length: 60,000 characters.
 
