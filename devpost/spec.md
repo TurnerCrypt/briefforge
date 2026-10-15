@@ -39,6 +39,7 @@ One versioned localStorage record for draft brief, analyzed brief and items; val
 Markdown snapshot contains checked state, edited wording, source quotations, uncertainty flags and rule-based limitations. Download uses a Blob; no external transmission.
 
 ## Data Model
+Optional `eventName` string, maximum 120 characters, labels the screen and Markdown heading; safe filename uses a normalized slug. Legacy records without this field remain compatible and retain existing work. User edits supply the event name; extraction does not guess it.
 `{version:1, brief:string, analyzedBrief:string, items:[{id, title, source, category, flags:string[], done:boolean}]}`. All data is browser-local, not cross-device and not guaranteed after browser storage is cleared.
 
 ## File Structure

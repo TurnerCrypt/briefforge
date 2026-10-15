@@ -106,6 +106,9 @@ export function extractRequirements(brief) {
  return items;
 }
 const escapeMarkdown=s=>s.replace(/([\\`*_{}\[\]<>])/g,'\\$1').replace(/\r?\n/g,' ');
-export function toMarkdown(items){
- return '# BriefForge checklist\n\nRule-based extraction. Review the complete official rules; this checklist may miss requirements.\n\n'+items.map(i=>`- [${i.done?'x':' '}] **${escapeMarkdown(i.category)}:** ${escapeMarkdown(i.title)}\n  - Source: ${escapeMarkdown(i.source)}${i.flags.map(f=>`\n  - Review: ${escapeMarkdown(f)}`).join('')}`).join('\n\n')+'\n';
+export function eventName(value=''){return String(value).replace(/[\r\n\t]+/g,' ').trim().slice(0,120);}
+export function exportFilename(name=''){const slug=eventName(name).toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'-').replace(/^-+|-+$/g,'').slice(0,90);return (slug||'briefforge')+'-checklist.md';}
+export function toMarkdown(items,name=''){
+ const heading=eventName(name)||'Untitled hackathon';
+ return '# '+escapeMarkdown(heading)+' — checklist\n\nCreated with BriefForge. Rule-based extraction. Review the complete official rules; this checklist may miss requirements.\n\n'+items.map(i=>`- [${i.done?'x':' '}] **${escapeMarkdown(i.category)}:** ${escapeMarkdown(i.title)}\n  - Source: ${escapeMarkdown(i.source)}${i.flags.map(f=>`\n  - Review: ${escapeMarkdown(f)}`).join('')}`).join('\n\n')+'\n';
 }

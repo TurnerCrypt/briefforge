@@ -43,6 +43,7 @@ Display a concise action label above the evidence, rather than repeating the ful
 Users can edit the checklist wording while the source sentence remains unchanged. Marking an item complete does not certify eligibility or resolve an uncertainty flag. Continue was interpreted as agreement to the preceding recommendation to support editing; include this behavior in final product review.
 
 ## Export
+Learner-requested refinement: an editable Hackathon name field above the brief labels the generated checklist, exported document heading and download filename. Save the name with local work. Renaming does not regenerate or reset checklist progress. Blank names display Untitled hackathon; do not guess a name from navigation or comments in pasted page text.
 Proposed default: download a Markdown file containing checklist wording, checked state, source sentences and unresolved flags. The exported checklist is a snapshot of the current work. Markdown is readable as plain text and supports checkboxes in many editors. This format is an agent recommendation, not a learner-selected format.
 
 ## Empty and Error States

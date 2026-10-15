@@ -1,5 +1,5 @@
 export const STORAGE_KEY='briefforge:v1';
 const categories=new Set(['Requirement','Deadline','Eligibility','Demo','Code','Tools','Submission']);
 export function validState(value){return Boolean(value&&value.version===1&&typeof value.brief==='string'&&value.brief.length<=60000&&typeof value.analyzedBrief==='string'&&value.analyzedBrief.length<=60000&&Array.isArray(value.items)&&value.items.length<=2000&&value.items.every(i=>i&&typeof i.id==='string'&&typeof i.title==='string'&&i.title.length<=3000&&typeof i.source==='string'&&i.source.length<=2500&&categories.has(i.category)&&typeof i.done==='boolean'&&Array.isArray(i.flags)&&i.flags.every(f=>typeof f==='string'&&f.length<1000)));}
-export function loadState(storage){const raw=storage.getItem(STORAGE_KEY);if(raw===null)return null;const value=JSON.parse(raw);if(!validState(value))throw new Error('Saved work could not be read.');return value;}
+export function loadState(storage){const raw=storage.getItem(STORAGE_KEY);if(raw===null)return null;const value=JSON.parse(raw);if(!validState(value)||value.eventName!==undefined&&(typeof value.eventName!=='string'||value.eventName.length>120))throw new Error('Saved work could not be read.');return value;}
 export function saveState(storage,state){if(!validState(state))throw new Error('Work could not be saved.');storage.setItem(STORAGE_KEY,JSON.stringify(state));}

@@ -6,6 +6,7 @@ A small, local-first hackathon requirements checklist. Built with the Devpost Le
 Install Node.js (developed using Node 24), then run `node server.cjs` from this folder. Open http://127.0.0.1:4173 . No npm install, API key or account is needed. Keep that origin/port to return to the same browser-local saved work.
 
 ## Try it
+Enter the event title in **Hackathon name** above the brief. The name appears above generated results and in the exported document/filename. You can rename an existing checklist without regenerating it. The app does not guess event names from pasted navigation text; blank names are shown as Untitled hackathon.
 Select **Try a sample**, then **Create checklist**. Inspect the source sentences, edit wording, mark a requirement complete and reload. Export downloads a Markdown snapshot with sources, flags and checkboxes. Paste your own brief to try another event; regeneration replaces previous edits after confirmation.
 
 Cards use concise action labels when a conservative rule is available. **View original source** retains exact wording plus recognized section/list context. Complex exceptions receive review-oriented titles rather than a guessed interpretation. Updates do not rewrite saved checklists: refresh and explicitly regenerate to apply new extraction/title behavior.
