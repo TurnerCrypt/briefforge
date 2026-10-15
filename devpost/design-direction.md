@@ -1,5 +1,7 @@
 # Visual direction
 
+Brand revision: learner approved removal of the POC badge and replacement of the hex-nut logo with an original solid B monogram and folded-corner detail. Same warm accent, used in the header and favicon. Internal proof-of-concept documentation remains accurate.
+
 User request, 15 October 2026: minimalist multi-shape theme with screwdrivers, screws and other hackathon/building items. Reference images illustrate scattered outline doodles; create original artwork rather than copying their illustrations or arrangement.
 
 Confirmed: minimalist presentation, varied maker/building shapes, original interpretation.
