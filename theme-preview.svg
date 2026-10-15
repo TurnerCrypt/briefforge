@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+ <linearGradient id="glass" x2=".8" y2="1"><stop stop-color="#ffffff" stop-opacity=".13"/><stop offset=".5" stop-color="#b6c5d3" stop-opacity=".035"/><stop offset="1" stop-color="#ffffff" stop-opacity=".065"/></linearGradient>
+ <linearGradient id="edge" x2=".6" y2="1"><stop stop-color="#ffffff" stop-opacity=".42"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".06"/><stop offset="1" stop-color="#ffffff" stop-opacity=".18"/></linearGradient>
+ <linearGradient id="button" x2="0" y2="1"><stop stop-color="#ffd4ae"/><stop offset="1" stop-color="#eaa16b"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ba794e" stop-opacity=".23"/><stop offset="1" stop-color="#ba794e" stop-opacity="0"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="9"/></filter>
+ <clipPath id="shell"><rect x="70" y="52" width="1060" height="696" rx="32"/></clipPath>
+ <pattern id="tools" width="1200" height="800" patternUnits="userSpaceOnUse"><g fill="none" stroke="#56616d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(518 752) rotate(62) scale(0.98)" opacity="0.91"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(1213 273) rotate(206) scale(1.10)" opacity="0.86"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(1043 815) rotate(108) scale(0.71)" opacity="0.79"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(1206 671) rotate(346) scale(0.96)" opacity="0.53"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(526 -1) rotate(180) scale(1.10)" opacity="0.72"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(1106 71) rotate(325) scale(0.82)" opacity="0.90"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(920 152) rotate(299) scale(1.18)" opacity="0.56"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(923 792) rotate(220) scale(0.80)" opacity="0.79"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(687 804) rotate(255) scale(1.01)" opacity="0.88"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(776 669) rotate(215) scale(0.69)" opacity="0.92"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(1114 376) rotate(219) scale(0.75)" opacity="0.94"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(261 -6) rotate(334) scale(0.70)" opacity="0.61"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(236 283) rotate(298) scale(1.16)" opacity="0.54"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(113 545) rotate(14) scale(0.59)" opacity="0.88"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(835 619) rotate(310) scale(0.93)" opacity="0.94"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(659 566) rotate(227) scale(1.10)" opacity="0.55"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(980 228) rotate(269) scale(1.08)" opacity="0.97"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(1059 -17) rotate(81) scale(0.65)" opacity="0.71"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(375 247) rotate(94) scale(0.77)" opacity="0.53"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(840 164) rotate(36) scale(1.03)" opacity="0.60"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(321 361) rotate(298) scale(1.13)" opacity="0.95"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(368 -3) rotate(62) scale(0.97)" opacity="0.93"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(858 346) rotate(188) scale(1.20)" opacity="0.86"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(479 457) rotate(39) scale(1.03)" opacity="0.87"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(533 113) rotate(345) scale(0.62)" opacity="0.84"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(822 440) rotate(349) scale(1.05)" opacity="0.61"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(994 117) rotate(152) scale(1.08)" opacity="0.80"><path d="M0-19l17 10v18L0 19-17 9V-9z"/><circle r="7"/></g>
+<g transform="translate(577 222) rotate(125) scale(1.06)" opacity="0.82"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(1138 623) rotate(140) scale(0.87)" opacity="0.96"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(1050 254) rotate(204) scale(0.98)" opacity="0.86"><path d="M0-19l17 10v18L0 19-17 9V-9z"/><circle r="7"/></g>
+<g transform="translate(353 452) rotate(26) scale(0.71)" opacity="0.66"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(530 575) rotate(259) scale(0.94)" opacity="0.96"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(312 64) rotate(339) scale(0.56)" opacity="0.67"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(169 818) rotate(339) scale(0.67)" opacity="0.82"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(134 450) rotate(297) scale(1.05)" opacity="0.89"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(755 482) rotate(274) scale(0.88)" opacity="0.55"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(1213 13) rotate(333) scale(0.87)" opacity="0.79"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(36 465) rotate(347) scale(0.65)" opacity="0.68"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(734 101) rotate(253) scale(0.88)" opacity="0.88"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(1215 202) rotate(179) scale(0.75)" opacity="0.81"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(636 400) rotate(282) scale(1.02)" opacity="0.65"><path d="M0-19l17 10v18L0 19-17 9V-9z"/><circle r="7"/></g>
+<g transform="translate(959 641) rotate(340) scale(1.09)" opacity="0.57"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(1019 559) rotate(300) scale(0.67)" opacity="0.57"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(139 100) rotate(107) scale(1.09)" opacity="0.52"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(287 624) rotate(129) scale(0.98)" opacity="0.66"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(793 806) rotate(63) scale(0.79)" opacity="0.52"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(207 64) rotate(93) scale(1.04)" opacity="0.49"><path d="M0-19l17 10v18L0 19-17 9V-9z"/><circle r="7"/></g>
+<g transform="translate(966 495) rotate(19) scale(1.20)" opacity="0.78"><path d="M0-19l17 10v18L0 19-17 9V-9z"/><circle r="7"/></g>
+<g transform="translate(441 770) rotate(344) scale(0.99)" opacity="0.62"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(948 726) rotate(303) scale(1.20)" opacity="0.58"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(277 809) rotate(123) scale(0.98)" opacity="0.49"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(16 811) rotate(48) scale(0.95)" opacity="0.81"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(733 20) rotate(300) scale(0.65)" opacity="0.67"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(77 52) rotate(262) scale(0.97)" opacity="0.82"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(38 570) rotate(190) scale(0.70)" opacity="0.80"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(943 392) rotate(2) scale(1.04)" opacity="0.88"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(445 131) rotate(33) scale(0.57)" opacity="0.60"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(1046 725) rotate(148) scale(1.00)" opacity="0.78"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(947 -8) rotate(67) scale(0.88)" opacity="0.65"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(333 131) rotate(250) scale(0.68)" opacity="0.78"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(760 241) rotate(316) scale(0.69)" opacity="0.67"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(599 14) rotate(190) scale(1.08)" opacity="0.72"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(454 52) rotate(40) scale(0.92)" opacity="0.59"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(446 629) rotate(68) scale(0.65)" opacity="0.53"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(230 749) rotate(259) scale(0.62)" opacity="0.79"><path d="M0-19l17 10v18L0 19-17 9V-9z"/><circle r="7"/></g>
+<g transform="translate(119 743) rotate(180) scale(0.69)" opacity="0.68"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(658 322) rotate(177) scale(1.18)" opacity="0.80"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(610 465) rotate(195) scale(0.70)" opacity="0.74"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(328 518) rotate(24) scale(0.69)" opacity="0.94"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(1210 496) rotate(199) scale(0.65)" opacity="0.52"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(-13 695) rotate(151) scale(0.88)" opacity="0.79"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(565 306) rotate(178) scale(0.86)" opacity="0.93"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(994 312) rotate(307) scale(0.95)" opacity="0.79"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(1157 800) rotate(238) scale(0.57)" opacity="0.95"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(75 166) rotate(186) scale(1.18)" opacity="0.84"><path d="M0-19l17 10v18L0 19-17 9V-9z"/><circle r="7"/></g>
+<g transform="translate(906 236) rotate(344) scale(0.90)" opacity="0.91"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(161 596) rotate(59) scale(0.71)" opacity="0.93"><path d="M-12-24h24v8h-24zM-5-16v35l5 8 5-8v-35M-6-6l12-5M-6 4l12-5M-6 14l12-5"/></g>
+<g transform="translate(1127 170) rotate(56) scale(0.95)" opacity="0.81"><rect x="-8" y="-34" width="16" height="32" rx="6"/><path d="M0-2v26l-4 8h8l-4-8M-3-27v17M3-27v17"/></g>
+<g transform="translate(67 345) rotate(131) scale(0.92)" opacity="0.96"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(22 105) rotate(42) scale(1.00)" opacity="0.93"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(864 74) rotate(211) scale(1.12)" opacity="0.60"><path d="M0-19l17 10v18L0 19-17 9V-9z"/><circle r="7"/></g>
+<g transform="translate(577 656) rotate(323) scale(1.17)" opacity="0.94"><path d="M0-19l17 10v18L0 19-17 9V-9z"/><circle r="7"/></g>
+<g transform="translate(238 501) rotate(29) scale(1.09)" opacity="0.61"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+<g transform="translate(628 724) rotate(35) scale(0.99)" opacity="0.84"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(1126 485) rotate(350) scale(0.79)" opacity="0.65"><rect x="-31" y="-9" width="62" height="18" rx="3"/><path d="M-21-9v9m10-9v5m10-5v9m10-9v5m10-5v9"/></g>
+<g transform="translate(359 581) rotate(29) scale(1.15)" opacity="0.92"><rect x="-24" y="-16" width="48" height="32" rx="5"/><path d="M-14-7l7 7-7 7M0 7h13"/></g>
+<g transform="translate(360 804) rotate(15) scale(1.12)" opacity="0.86"><path d="M-14-12l-12 12 12 12m28-24 12 12-12 12M5-18-5 18"/></g>
+</g></pattern>
+</defs>
+<rect width="1200" height="800" fill="#111519"/><rect width="1200" height="800" fill="url(#tools)" opacity=".6"/>
+<ellipse cx="280" cy="190" rx="470" ry="340" fill="url(#glow)"/>
+<g clip-path="url(#shell)"><rect width="1200" height="800" fill="url(#tools)" filter="url(#blur)" opacity=".3"/><rect x="70" y="52" width="1060" height="696" fill="#141a20" fill-opacity=".75"/></g>
+<g font-family="Segoe UI,Arial,sans-serif">
+ <rect x="70" y="52" width="1060" height="696" rx="32" fill="url(#glass)" stroke="url(#edge)"/>
+ <path d="M101 91l9-9 9 9-9 9z" fill="#f4a261"/><text x="135" y="98" font-size="21" fill="#f3f1ed" font-weight="600">Hackathon Checklist</text>
+ <text x="1096" y="96" text-anchor="end" font-size="12" letter-spacing="2" fill="#9aa5af">THEME STUDY / 03</text>
+ <text x="108" y="172" font-size="36" letter-spacing="-1.2" font-weight="600" fill="#f3f1ed">Build it. Don’t miss a requirement.</text>
+ <text x="108" y="206" font-size="16" fill="#a9b3bc">Turn a long brief into a checklist you can verify.</text>
+ <rect x="108" y="244" width="432" height="409" rx="20" fill="url(#glass)" stroke="url(#edge)"/>
+ <text x="130" y="280" font-size="18" fill="#f3f1ed" font-weight="600">Your brief</text>
+ <rect x="130" y="301" width="388" height="265" rx="8" fill="#171c21" stroke="#414a53"/>
+ <text x="148" y="331" font-size="15" fill="#8f9ba6">Paste the hackathon brief here…</text>
+ <path d="M145 583H501Q518 583 518 600V615L504 635H147Q130 635 130 618V603Z" fill="#070a0d" fill-opacity=".4"/>
+ <path d="M145 579H501Q518 579 518 596V611L504 631H147Q130 631 130 614V599Z" fill="url(#button)" stroke="#ffe0c5" stroke-opacity=".8"/>
+ <path d="M154 584H499Q512 584 512 597" fill="none" stroke="#fff6eb" stroke-opacity=".6"/>
+ <text x="324" y="611" text-anchor="middle" font-size="15" letter-spacing=".2" font-weight="600" fill="#25201c">Create checklist</text>
+ <rect x="560" y="244" width="532" height="409" rx="20" fill="url(#glass)" stroke="url(#edge)"/>
+ <text x="584" y="280" font-size="18" font-weight="600" fill="#f3f1ed">Submission checklist</text>
+ <text x="1068" y="280" text-anchor="end" font-size="13" fill="#a9b3bc">Example output</text>
+ <g fill="#171c21" stroke="#38414a"><rect x="582" y="302" width="488" height="97" rx="8"/><rect x="582" y="413" width="488" height="97" rx="8"/><rect x="582" y="524" width="488" height="71" rx="8"/></g>
+ <g fill="none" stroke="#85939e" stroke-width="1.5"><rect x="600" y="322" width="18" height="18" rx="4"/><rect x="600" y="433" width="18" height="18" rx="4"/></g>
+ <text x="632" y="337" font-size="16" fill="#f3f1ed">Include a public code repository</text>
+ <text x="632" y="369" font-size="13" fill="#98a6b1">Source: “The repository must be public.”</text>
+ <text x="632" y="448" font-size="16" fill="#f3f1ed">Record a demo under 3 minutes</text>
+ <text x="632" y="480" font-size="13" fill="#98a6b1">Source: “Video should be less than three minutes.”</text>
+ <text x="601" y="552" font-size="14" fill="#f4b87e">Review needed · deadline timezone not provided</text>
+ <text x="601" y="576" font-size="13" fill="#98a6b1">Confirm with the official event rules.</text>
+ <rect x="925" y="608" width="145" height="32" rx="10" fill="url(#glass)" stroke="url(#edge)"/>
+ <text x="998" y="629" text-anchor="middle" font-size="13" fill="#e4e8eb">Export checklist</text>
+ <text x="108" y="708" font-size="13" fill="#a1adb7">Frosted surfaces · original maker details · sculpted controls</text>
+ <text x="1092" y="708" text-anchor="end" font-size="12" fill="#89959f">Visual proposal — controls are not interactive</text>
+</g>
+</svg>
